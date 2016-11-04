@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<title>SVG Animation</title>
+<head>
+  <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+  <link rel="stylesheet" href="css.css">
+</head>
+<center>
+<p>Project</p>
+</center>
+<svg width="100%" viewBox="0 0 200 100" style="background-color: navy">
+
+<rect x="10" y="10" width="25" height="12.25" fill="lightskyblue">
+  <animate id="recttoright" attributeName="x" from="10" to="190" begin="0s; recttoleft.end" dur="5s"/>
+  <animate id="recttoleft" attributeName="x" from="190" to="10" begin="recttoright.end" dur="5s"/>
+</rect>
+
+<polygon  points=" 190 95 190 90 200 93" fill="cornsilk">
+  <animate id="triangletoleft" attributeName="points" from="100 95 190 100 200 3" to="100 5 10 20 20 193" begin="0s; triangletoright.end" dur="3s"/>
+  <animate id="triangletoright" attributeName="points" from="100 5 10 20 20 193" to="100 95 190 100 200 50" begin="triangletoleft.end" dur="5s"/>
+
+</polygon>
+
+<circle cx="10" cy="25" r="10" fill="black" fill-opacity="0.5">
+  <animate id="circletoright" attributeName="cy" from="10" to="90" begin="0s; circletoleft.end" dur="5s"/>
+  <animate id="circletoleft" attributeName="cy" from="90" to="10" begin="circletoright.end" dur="5s"/>
+</circle>
+
+<ellipse cx="190" cy="25" rx="10" ry="5" fill="black" fill-opacity="0.5">
+  <animate id="circletoright" attributeName="cy" from="90" to="10" begin="0s; circletoleft.end" dur="5s"/>
+  <animate id="circletoleft" attributeName="cy" from="10" to="90" begin="circletoright.end" dur="5s"/>
+</ellipse>
+
+
+
+
+
+
+
+</svg>
+
+
+
+
+</html>
