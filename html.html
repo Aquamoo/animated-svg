@@ -6,8 +6,9 @@
   <link rel="stylesheet" href="css.css">
 </head>
 <center>
-<p>Project</p>
+<p>Shapes</p>
 </center>
+<p>For this project i just wanted to create a cool</br> project with random shapes moving around. Click</br> the ellipses that arent moving to move them.</p>
 <svg width="100%" viewBox="0 0 200 100" style="background-color: navy">
 
 <rect x="10" y="10" width="25" height="12.25" fill="lightskyblue">
@@ -22,8 +23,8 @@
 </polygon>
 
 <circle cx="10" cy="25" r="10" fill="black" fill-opacity="0.5">
-  <animate id="circletoright" attributeName="cy" from="10" to="90" begin="0s; circletoleft.end" dur="5s"/>
-  <animate id="circletoleft" attributeName="cy" from="90" to="10" begin="circletoright.end" dur="5s"/>
+  <animate id="circletoright2" attributeName="cy" from="10" to="90" begin="0s; circletoleft2.end" dur="5s"/>
+  <animate id="circletoleft2" attributeName="cy" from="90" to="10" begin="circletoright2.end" dur="5s"/>
 </circle>
 
 <ellipse cx="190" cy="25" rx="10" ry="5" fill="black" fill-opacity="0.5">
@@ -31,7 +32,19 @@
   <animate id="circletoleft" attributeName="cy" from="10" to="90" begin="circletoright.end" dur="5s"/>
 </ellipse>
 
+<ellipse cx="190" cy="90" rx="10" ry="5" fill="black" fill-opacity="0.5">
+  <animate id="circletoright3" attributeName="cy" from="90" to="10" begin="circletoleft3.end; click" dur="5s"/>
+  <animate id="circletoleft3" attributeName="cy" from="10" to="90" begin="circletoright3.end" dur="5s"/>
+  <animate id="circletoright3" attributeName="cx" from="190" to="10" begin="circletoleft3.end; click" dur="5s"/>
+  <animate id="circletoleft3" attributeName="cx" from="10" to="190" begin="circletoright3.end" dur="5s"/>
+</ellipse>
 
+<ellipse cx="10" cy="90" rx="10" ry="5" fill="black" fill-opacity="0.5">
+  <animate id="circletoright4" attributeName="cy" from="90" to="10" begin="circletoleft4.end; click" dur="5s"/>
+  <animate id="circletoleft4" attributeName="cy" from="10" to="90" begin="circletoright4.end" dur="5s"/>
+  <animate id="circletoright4" attributeName="cx" from="10" to="190" begin="circletoleft4.end; click" dur="5s"/>
+  <animate id="circletoleft4" attributeName="cx" from="190" to="10" begin="circletoright4.end" dur="5s"/>
+</ellipse>
 
 
 
